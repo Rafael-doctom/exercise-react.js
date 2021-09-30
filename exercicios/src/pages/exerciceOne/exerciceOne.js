@@ -5,12 +5,13 @@ import React from 'react';
 
 
 export default function ExerciceOne() {
-    const title = "Exercicio 1"
+    const title = "ExerciceOne"
 
     const styleOfTitle = {
-        fontSize: "40px",
+        fontSize: "25px",
         color: "red",
     }
+
     return (
         <>
             <h4 style={styleOfTitle}>{title}</h4>
