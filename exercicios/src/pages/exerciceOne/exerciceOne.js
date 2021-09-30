@@ -1,19 +1,19 @@
-// Criar titulo 
-// criar estilo para o titulo
-// não usar libs de estilos
+// add title
+// add style for title
+
 import React from 'react';
 
 
 export default function ExerciceOne() {
-    const titulo = "Exercicio 1"
+    const title = "Exercicio 1"
 
-    const estiloDoTitulo = {
+    const styleOfTitle = {
         fontSize: "40px",
         color: "red",
     }
     return (
         <>
-            <h4 style={estiloDoTitulo}>{titulo}</h4>
+            <h4 style={styleOfTitle}>{title}</h4>
         </>
     )
 }
