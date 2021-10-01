@@ -21,11 +21,11 @@ export default function ExerciseThree() {
             <div>
                 <h6>ExerciceThree</h6>
                 Nome: {DataOfPurchase.name}
-                <br />
+                <br/>
                 Idade: {DataOfPurchase.age}
-                <br />
+                <br/>
                 Situação: {DataOfPurchase.situation}
-                <br />
+                <br/>
                 Total gastos: {DataOfPurchase.purchaseOne + DataOfPurchase.purchaseTwo + DataOfPurchase.purchaseThree}
             </div>
         </>
