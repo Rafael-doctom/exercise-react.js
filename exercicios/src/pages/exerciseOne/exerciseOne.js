@@ -14,7 +14,9 @@ export default function ExerciseOne() {
 
     return (
         <>
-            <h4 style={styleOfTitle}>{title}</h4>
+            <h4 style={styleOfTitle}>
+                {title}
+            </h4>
         </>
     )
 }
