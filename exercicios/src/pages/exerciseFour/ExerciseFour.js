@@ -9,7 +9,6 @@ export default function ExerciseFour() {
         nomeOne: 'Rafael',
         nomeTwo: 'Luis',
         nomeThree: 'Kaio',
-
     }
     return (
         <>
