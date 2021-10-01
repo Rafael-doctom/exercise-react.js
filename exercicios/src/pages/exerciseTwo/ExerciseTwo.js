@@ -17,7 +17,6 @@ export default function ExerciseTwo() {
     const valueOne = 100;
     const valueTwo = 200;
     const valueThree = 300;
-
     const Total = (valueOne + valueTwo + valueThree) / 3
 
 
