@@ -16,17 +16,28 @@ export default function ExerciseThree() {
         purchaseThree: 500,
     }
 
+    const Values = [100, 100, 100]
+
+    function totalValues(a, b) {
+        return a + b
+    }
+
+    const resultValues = Values.reduce(totalValues)
+
+
     return (
         <>
             <div>
                 <h6>ExerciceThree</h6>
-                Nome: {DataOfPurchase.name}
-                <br/>
-                Idade: {DataOfPurchase.age}
-                <br/>
-                Situação: {DataOfPurchase.situation}
-                <br/>
-                Total gastos: {DataOfPurchase.purchaseOne + DataOfPurchase.purchaseTwo + DataOfPurchase.purchaseThree}
+                {DataOfPurchase.name}
+                <br />
+                {DataOfPurchase.age}
+                <br />
+                {DataOfPurchase.situation}
+                <br />
+                {DataOfPurchase.purchaseOne + DataOfPurchase.purchaseTwo + DataOfPurchase.purchaseThree}
+                <br />
+                {resultValues}
             </div>
         </>
     )
