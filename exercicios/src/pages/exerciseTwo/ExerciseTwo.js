@@ -6,7 +6,7 @@
 import React from 'react';
 
 
-export default function ExerciceTwo() {
+export default function ExerciseTwo() {
 
     const Data = {
         notebook: 'Samsung',

@@ -4,7 +4,7 @@
 import React from 'react';
 
 
-export default function ExerciceOne() {
+export default function ExerciseOne() {
     const title = "ExerciceOne"
 
     const styleOfTitle = {

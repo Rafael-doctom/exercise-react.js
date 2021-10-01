@@ -5,7 +5,7 @@
 import React from 'react';
 
 
-export default function ExerciceThree() {
+export default function ExerciseThree() {
 
     const DataOfPurchase = {
         name: 'Rafael',
