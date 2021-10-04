@@ -11,7 +11,7 @@ export default function ExerciseTen() {
 
     return (
         <>
-            <button onClick={() => setCountNumber(countNumber + 1)}>
+            <button style={{backgroundColor:'Gray', height:'50px', width:'40px'}} onClick={() => setCountNumber(countNumber + 1)}>
                 {countNumber}
             </button>
         </>
