@@ -2,23 +2,25 @@ import React, { useEffect, useState } from 'react'
 
 
 export default function ExerciseThirteen() {
-    const [exemplo, setExemplo] = useState(null)
+
+    const [dados, setDados] = useState(null)
 
     useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/posts')
-            .then(response => response.json())
-            .then(json => setExemplo(json))
-    })
+        fetch('https://ranekapi.origamid.dev/json/api/produto/notebook')
+            .then((response) => response.json())
+            .then((json) => setDados(json))
+    }, [])
 
     return (
         <div>
+            {dados && (
+                <div>
+                    <h1> {dados.nome}</h1>
+                    <p>{dados.preco}</p>
+                    <p>{dados.descricao}</p>
 
-            <h5>
-                {exemplo.title}
-            </h5>
-
-
-
+                </div>
+            )}
         </div>
     )
 }
