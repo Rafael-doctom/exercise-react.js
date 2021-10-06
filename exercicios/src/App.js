@@ -16,7 +16,7 @@ import ExerciseTwelve from './pages/exerciseTwelve/ExerciseTwelve.js';
 import ExerciseThirteen from './pages/exerciseThirteen/ExerciseThirteen.js';
 import ExerciseFourteen from './pages/exerciseFourteen/ExerciseFourteen';
 import ExerciseFifteen from './pages/exerciseFifteen/ExerciseFifteen.js';
-
+import ExerciseSixteen from './pages/exerciseSixteen/ExerciseSixteen'
 function App() {
 
 
@@ -39,6 +39,7 @@ function App() {
       <ExerciseThirteen />
       <ExerciseFourteen />
       <ExerciseFifteen />
+      <ExerciseSixteen />
     </>
   );
 }
