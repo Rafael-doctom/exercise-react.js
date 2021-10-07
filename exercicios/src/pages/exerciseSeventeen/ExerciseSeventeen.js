@@ -1,29 +1,34 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 
 export default function ExerciseSeventeen() {
 
-    const [input, setInput] = useState('teste')
 
-
-    const nome = [
-        { pessoa: 'rafael' },
-        { pessoa: 'rafael' },
-        { pessoa: 'rafael' }
+    const phrase = [
+        { text: 'dsafaga' },
+        { text: 'dsafaga' },
+        { text: 'dsafaga' },
+        { text: 'dsafaga' },
+        { text: 'dsafaga' },
+        { text: 'dsafaga' },
 
     ]
 
     return (
         <>
-            <input type="text" value={input} onChange={() => setInput()} />
 
             <div>
                 <ul>
                     {
-                        nome.map((lista) => (<li>{lista.pessoa} </li>))
+                        phrase.map((item) => (
+                            <li>
+                                {item.text}
+                            </li>
+                        ))
                     }
                 </ul>
             </div>
         </>
     )
 }
+
