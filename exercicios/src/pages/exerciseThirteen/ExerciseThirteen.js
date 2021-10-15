@@ -6,7 +6,7 @@ export default function ExerciseThirteen() {
     const [dados, setDados] = useState(null)
 
     useEffect(() => {
-        fetch('https://ranekapi.origamid.dev/json/api/produto/notebook')
+        fetch('https://ranekapi.origamid.dev/json/api/produto')
             .then((response) => response.json())
             .then((json) => setDados(json))
     }, [])
