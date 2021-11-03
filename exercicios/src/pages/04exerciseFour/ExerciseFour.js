@@ -16,7 +16,7 @@ export default function ExerciseFour() {
 
     const books = [
         { nameOfBook: 'Pai rico, pai pobre' },
-        { nameOfBook: 'Senhor dos aneis' },
+        // { nameOfBook: 'Senhor dos aneis' },
     ];
 
 
@@ -33,7 +33,7 @@ export default function ExerciseFour() {
 
             <div>
                 {
-                    books.map(book => (<li>{book.nameOfBook}</li>))
+                    books.map(book => (<li key={book}>{book.nameOfBook}</li>))
                 }
             </div>
         </>

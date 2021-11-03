@@ -20,7 +20,7 @@ export default function ExerciseEight() {
                 {Products.map(item => (
                     <>
                         <li key={item.product}>
-                            {item.product}{' '}{item.value}
+                            {item.product}{' / '}{item.value}
                         </li>
                     </>
                 ))}

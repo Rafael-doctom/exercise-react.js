@@ -21,7 +21,7 @@ export default function ExerciseSeventeen() {
                 <ul>
                     {
                         phrase.map((item) => (
-                            <li>
+                            <li key={item}>
                                 {item.text}
                             </li>
                         ))

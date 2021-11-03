@@ -20,7 +20,7 @@ export default function ExerciseFive() {
                 {identificador.map(({ number, color }) => <div>
                     <ul>
                         {color.map((cor) => (
-                            <li style={{ backgroundColor: cor }}>
+                            <li key={cor} style={{ backgroundColor: cor }}>
                                 {cor}
                             </li>
                         )
