@@ -25,6 +25,7 @@ import ExerciseEighteen from './pages/18exerciseEighteen/ExerciseEighteen';
 import ExerciseTwenty from './pages/20exerciseTwenty/ExerciseTwenty.js';
 import ExerciseTwentyOne from './pages/21exerciseTwentyOne/ExerciseTwentyOne.js';
 import ExerciseTwentyTwo from './pages/22exerciseTwentyTwo/ExerciseTwentyTwo.js';
+import ExerciseTwentyThree from './pages/23exerciseTwentyThree/ExerciseTwentyThree.js';
 
 
 
@@ -59,6 +60,7 @@ function App() {
         <ExerciseTwenty />
         <ExerciseTwentyOne />
         <ExerciseTwentyTwo /> {/* useState & useEffect & Sum Input*/}
+        <ExerciseTwentyThree />
       </UserContext.Provider>
     </>
   );
