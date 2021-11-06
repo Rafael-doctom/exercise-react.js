@@ -1,53 +1,58 @@
 import { useEffect, useState } from "react";
 
-export const ExerciseTwentyFour = () => {
-    // dados do video
-    const [data, setDados] = useState();
+export const VideoPlayer = () => {
+     const [data, setDados] = useState();
 
-    // dados do Input
-    // const [dados, RetornarDados] = useState()
+    const [dados, setValue] = useState()
 
-    // chave
-    const API_KEY = 'AIzaSyBJKS9tPpfEiNvaBuReZSbXduCOQ_DvHi0';
+     const API_KEY = 'AIzaSyBJKS9tPpfEiNvaBuReZSbXduCOQ_DvHi0';
 
-    // id estático
-    const ID_CANAL = '3CKqZ7GZK6A';
+     const ID_CANAL = '3CKqZ7GZK6A';
 
-    
-    const RetornarDados = (e, evnt) =>{
-        evnt.preventDefault()
-        e.target.value()
 
-        
-    }
+     const RetornarDados = (evnt) => {
+         evnt.preventDefault()
+         var valorSearchDoId = document.getElementById("cep").value
+         var id = `${valorSearchDoId}`
+         var link = `https:www.youtube.com/watch?v=${id}`
+         var text = link.indexOf('=');
+         var resultado = link.substring(text + 33)
+         var ID_CANAL = `${resultado}`
+          alert(ID_CANAL)
 
-    useEffect(() => {
-        fetch(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet&id=${ID_CANAL}&key=${API_KEY}`)
-            .then((response) => response.json())
-            .then((json) => setDados(json))
-            .catch(error => {
-                alert("erro au buscar API")
-            })
-        console.log(setDados)
-    }, []);
+         fetch(`https:youtube.googleapis.com/youtube/v3/videos?part=snippet&id=${ID_CANAL}&key=${API_KEY}`)
+             .then((response) => response.json())
+             .then((json) => setDados(json))
+             .catch(error => {
+                 alert("erro na API" + error)
+             })
+         console.log(setDados)
+
+     }
+
+
+     useEffect(() => {
+
+     }, []);
 
 
     return (
         <>
             <form>
-                <label for="cep">Cep</label>
-                <input id="cep" type="text" />
+                <label for="cep">CANAL</label>
+                <input id="cep" type="text" onChange={(e) => setValue(e.target.value)} onBlur={RetornarDados} />
 
-                <label for="bairro">Bairro</label>
-                <input type="text" id="bairro" />
-                <button onClick={RetornarDados} >enviar</button>
+                <button  >enviar</button>
             </form>
-            {/* <p>resultado: {dados}</p> */}
+            <p>resultado: {dados}</p>
 
             {data && (
                 <div>
-                    Titulo={data.items[0].id} <br/>
-                    Resultados={data.pageInfo.totalResults}
+                    kind={data.kind} <br />
+                    etag={data.etag}<br />
+                    id do video = {data.items[0].id}<br />
+                    nome do canal = {data.items[0].snippet.channelTitle}<br />
+                    Resultados={data.pageInfo.totalResults}<br />
                 </div>
             )}
         </>
