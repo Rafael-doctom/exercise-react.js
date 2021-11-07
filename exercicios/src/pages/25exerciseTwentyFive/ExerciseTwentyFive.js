@@ -1,4 +1,4 @@
-import { useEffect,useState } from "react"
+import { useEffect, useState } from "react"
 
 export const ExerciseTwentyFive = () => {
 
@@ -10,7 +10,7 @@ export const ExerciseTwentyFive = () => {
         })
     }, [count]);
 
-   
+
 
     const somarValores = () => {
         var number1 = Number(document.getElementById('n1').value)
@@ -19,10 +19,11 @@ export const ExerciseTwentyFive = () => {
         alert(count)
     }
 
-   
+
     return (
         <>
-            <input type="number" id="n1" /> + 
+            <h1>ExerciseTwentyFive</h1>
+            <input type="number" id="n1" /> +
             <input type="number" id="n2" />
             <button onClick={somarValores}>somar</button>
         </>
